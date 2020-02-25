@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import mealdb from '../mealdb-api';
+import Helmet from 'react-helmet';
+import Loading from '../components/Loading';
+import RecipeCard from '../components/RecipeCard';
 
 export default class Home extends Component {
   constructor(props) {
@@ -25,10 +28,20 @@ export default class Home extends Component {
   render() {
     const { recipes, isLoading } = this.state;
     // console.log(recipes);
+    if (isLoading) {
+      return <Loading />;
+    }
     return (
-      <div>
-        <h1>Home</h1>
-      </div>
+      <>
+        <Helmet>Recipes</Helmet>
+
+        <div className='recipies'>
+          {recipes &&
+            recipes.map(recipe => (
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+        </div>
+      </>
     );
   }
 }

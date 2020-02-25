@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <div>
         <header>
-          <Link to='/'>Recetas</Link>
+          <Link to='/'>Recipes</Link>
         </header>
 
         <main>
