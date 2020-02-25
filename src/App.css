@@ -146,3 +146,77 @@ header a {
   color: #555;
   margin: 0;
 }
+
+.timer {
+  background-color: #f55056;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: calc(100vh - 62px);
+  text-align: center;
+}
+
+.timer h1 {
+  width: 100%;
+}
+
+.setTime {
+  margin: 3em 0;
+}
+
+.setTime input {
+  background: transparent;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 65px;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.setTime input:focus {
+  outline: none;
+}
+
+.setTime button {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin: 4em auto 0;
+  padding: 1em 2em;
+}
+
+.timeLeft {
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.timer-type {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.timer-type span {
+  border-right: 1px solid #fff;
+  font-weight: lighter;
+  padding: 0.5em 1em;
+}
+
+.timer-type span:last-child {
+  border: none;
+}
+
+.timer-type .timer-active {
+  font-weight: bold;
+}

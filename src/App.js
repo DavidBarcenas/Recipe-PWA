@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Recipe from './pages/Recipe';
+import Timer from './pages/Timer';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <main>
           <Route exact path='/' component={Home} />
           <Route exact path='/recipe/:id' component={Recipe} />
+          <Route exact path='/timer' component={Timer} />
         </main>
       </div>
     </BrowserRouter>
