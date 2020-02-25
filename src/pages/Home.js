@@ -27,13 +27,14 @@ export default class Home extends Component {
 
   render() {
     const { recipes, isLoading } = this.state;
-    // console.log(recipes);
     if (isLoading) {
       return <Loading />;
     }
     return (
       <>
-        <Helmet>Recipes</Helmet>
+        <Helmet>
+          <title>Recipes</title>
+        </Helmet>
 
         <div className='recipies'>
           {recipes &&

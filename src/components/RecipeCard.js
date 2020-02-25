@@ -5,7 +5,7 @@ import './styles/RecipeCard.css';
 const RecipeCard = props => {
   const { recipe } = props;
   return (
-    <Link to='/' className='recipeItem'>
+    <Link to={`/recipe/${recipe.id}`} className='recipeItem'>
       <figure>
         <img src={recipe.img} alt={recipe.name} />
         <figcaption>
